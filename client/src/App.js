@@ -17,7 +17,7 @@ const App = () => {
     try {
       const parsedData = JSON.parse(jsonData);
       console.log(parsedData);
-      const res = await axios.post('http://localhost:5000/bfhl', {
+      const res = await axios.post('https://bajajrudraserver.onrender.com/bfhl', {
         data: parsedData.data,
         file_b64: parsedData.file_b64 || null,
       });
